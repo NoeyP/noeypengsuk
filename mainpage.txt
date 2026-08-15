@@ -1,0 +1,34 @@
+
+------------------------
+|                      | --- connects --- [ Camera ]
+|     Raspberry PI     | --- connects --- [ Microphone ]
+|                      | --- connects --- [ PCA (Controls Servos)]
+------------------------
+            |
+            |
+            |
+            V
+------------------------        --------------------------------------                                                         ---------------------------------------  
+|                      |        |           12 V DC Adapter          |                                                         |           LiPo Battery 11.1V        |
+|     STM32 Nucleo     |        |                |                   |                                                         |       (12.6 When Fully Charged)     |
+|                      |        |                |                   |                                                         |           XT 60 Fem Default         |
+------------------------        |                V                   | ----- Change  to This once in Deployment Phase ----->   |        to prevent short circuit     |
+            |                   |          Buck Converter            |                                                         |                   |                 |
+            |                   |  (Reduce Voltage Higher Current)   |                                                         |                   |                 |
+            |                   |                                    |                                                         |                   V                 |
+            V                   -------------------------------------                                                          |   XT 60 Male to Connect to Devices  |
+       I square C                                |                                                                             |                   |                 |
+(Helps MC connects with PCA)                     |                                                                             |                   |                 |
+            |                                    |                                                                             |                   V                 |
+            |                                    |                                                                             |      Connects to Servos at 6.1V     |
+            |                                    |                                                                             |              using buck,            |
+            V                                    V                                                                             |     Same goes for Rasp pi at 5.1V   |
+---------------------------------------------------------------------------                                                    ---------------------------------------
+|                                                                         |
+|                               Servos                                    |
+|                                                                         |
+---------------------------------------------------------------------------
+
+
+
+

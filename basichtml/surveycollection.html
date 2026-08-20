@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Skibidi Survey</h1> 
+    <p id="description">Do the form and test how rotten your brain is.</p>
+    <form id="survey-form">
+      <!-- Text Field Inputs -->
+      <label 
+      for='name'
+      id="name-label">
+      Name:</label>
+      <input 
+      type="text"
+      id="name"
+      placeholder="Username"
+      required>
+
+      <label 
+      for="email"
+      id="email-label">
+      Email:</label>
+      <input 
+      type="email"
+      id='email'
+      placeholder="example@email.com"
+      required>
+
+      <label 
+      for="number"
+      id="number-label">
+      Number:</label>
+      <input 
+      type="number"
+      id="number"
+      placeholder="Number"
+      required
+      min='1'
+      max='10'>
+    
+      <!-- Dropdown (Select Element) -->
+      <label for="dropdown" id="dropdown-label">Which One is Your Favorite Brain-rot?</label>
+      <select 
+      id="dropdown">
+      <option value="triple-t">Triple T</option>
+      <option value="tralaleto">Tralalelo</option>
+      </select>
+      <!-- Dropdown (Select Element) -->
+
+      <!-- Input Radio -->
+      <legend>Do you like brain-rot?</legend>
+      <label 
+      for="radio-yes" >
+      Yes</label>
+      <input 
+      type="radio"
+      id="radio"
+      name="yes-no"
+      value="yes"
+      >
+
+      <label 
+      for="radio-no">
+      No</label>
+      <input 
+      type="radio"
+      name="yes-no"
+      value="no"
+      >
+      <!-- Dropdown (Select Element) -->
+      <!-- Input Checkbox -->
+      <legend>What brain-rot do you like.</legend>
+      <label for="checkbox01" id="checkbox01-label">Triple T</label>
+      <input type="checkbox" value="triple-t">
+
+      <label for="checkbox02" id="checkbox02-label">Tralalelo</labellabel>
+      <input type="checkbox" value="tralalelo"> <br>
+      <!-- Input Checkbox -->
+
+      <!-- Comment Box -->
+      <label for="textarea" id="textarea" name="textarea"> 
+      <textarea 
+      cols="30"
+      rows="10"></textarea><br>
+      <!-- Comment Box-->
+      <input type="submit" id="submit">
+    </form> 
+
+  </body>
+</html>
